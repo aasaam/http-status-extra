@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "HTTP Status code extra information and emoji",
   "main": "index.js",
+  "private": false,
   "scripts": {
     "commit": "npx git-cz",
     "lint": "eslint .",
