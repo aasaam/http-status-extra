@@ -13,7 +13,7 @@ Object.keys(m).forEach((c) => {
   }
 });
 
-console.log('# AASAAM HTTP Status Extra Preview');
+console.log('# HTTP Status Extra Preview');
 console.log('');
 console.log('There is result of process based on JSON data.');
 console.log('');
