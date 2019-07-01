@@ -12,7 +12,7 @@ describe('Container', () => {
     Object.keys(m).forEach((c) => {
       const s = m[c];
       if (s.standard === 'http') {
-        expect(STATUS_CODES[c]).toEqual(m[c].message);
+        expect(STATUS_CODES[c].toLocaleLowerCase()).toEqual(m[c].message.toLocaleLowerCase());
       }
     });
   });
