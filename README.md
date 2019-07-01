@@ -1,5 +1,9 @@
 # AASAAM Extra HTTP Information
 
+[![Build Status](https://travis-ci.org/AASAAM/http-status-extra.svg?branch=master)](https://travis-ci.org/AASAAM/http-status-extra)
+
+[![Coverage Status](https://coveralls.io/repos/github/AASAAM/http-status-extra/badge.svg?branch=master)](https://coveralls.io/github/AASAAM/http-status-extra?branch=master)
+
 This simple package provide more fun stuff about standards and non-standards of HTTP Status Code.
 
 All of data collected from [wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
