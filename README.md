@@ -13,6 +13,14 @@ Feel free to open pull request but remember simple rules:
 * Emoji must be unique over status codes.
 * Standard `http` must be covered by [nodejs http module](https://nodejs.org/api/http.html#http_http_status_codes).
 
+## Installation
+
+Use npm to install
+
+```bash
+npm install @aasaam/http-status-extra
+```
+
 ## Data
 
 All data stored on [data.json](./data.json).
