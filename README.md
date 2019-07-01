@@ -2,7 +2,7 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/AASAAM/http-status-extra.svg)](https://greenkeeper.io/)
 
-[![travis](https://img.shields.io/travis/AASAAM/http-status-extra.svg)](https://badgen.net/travis/AASAAM/http-status-extra)
+[![travis](https://img.shields.io/travis/AASAAM/http-status-extra.svg)](https://travis-ci.org/AASAAM/http-status-extra)
 [![coveralls](https://img.shields.io/coveralls/github/AASAAM/http-status-extra.svg)](https://coveralls.io/github/AASAAM/http-status-extra)
 [![dependencies](https://img.shields.io/david/AASAAM/http-status-extra.svg)](https://david-dm.org/AASAAM/http-status-extra)
 [![dev-dependencies](https://img.shields.io/david/dev/AASAAM/http-status-extra.svg)](https://david-dm.org/AASAAM/http-status-extra?type=dev)
