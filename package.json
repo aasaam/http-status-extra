@@ -1,0 +1,54 @@
+{
+  "name": "@aasaam/http-status-extra",
+  "version": "0.0.0",
+  "description": "HTTP Status code extra information and emoji",
+  "main": "index.js",
+  "scripts": {
+    "commit": "npx git-cz",
+    "lint": "eslint .",
+    "test:cover": "jest --detectOpenHandles --runInBand --collectCoverage",
+    "test": "jest --detectOpenHandles --runInBand"
+  },
+  "jest": {
+    "testRegex": ".spec.js$",
+    "collectCoverageFrom": [
+      "index.js",
+      "src/**/*.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "json",
+      "json-summary",
+      "text",
+      "lcov",
+      "html",
+      "clover"
+    ],
+    "testEnvironment": "node"
+  },
+  "authors": [
+    {
+      "name": "Muhammad Hussein Fattahizadeh",
+      "email": "m@mhf.ir"
+    }
+  ],
+  "keywords": [
+    "http",
+    "status",
+    "nginx",
+    "cloudflare",
+    "iis",
+    "emoji"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24",
+    "eslint": "^5",
+    "eslint-config-airbnb-base": "^13",
+    "eslint-plugin-import": "^2",
+    "jest": "^24",
+    "lodash": "^4",
+    "stringz": "^2"
+  },
+  "dependencies": {}
+}

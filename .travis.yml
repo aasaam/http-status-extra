@@ -1,0 +1,14 @@
+sudo: true
+language: node_js
+node_js:
+  - "6"
+  - "8"
+  - "10"
+  - "12"
+install:
+  - npm install -g coveralls
+  - npm install
+script:
+  - npm run lint
+  - npm run test:cover
+  - cat ./coverage/lcov.info | coveralls
