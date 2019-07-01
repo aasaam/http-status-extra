@@ -386,8 +386,8 @@
   "499": {
     "emoji": "🚶🏽",
     "standard": "nginx",
-    "message": "Token Required",
-    "description": "Returned by ArcGIS for Server. Code 499 indicates that a token is required but was not submitted."
+    "message": "Client Closed Request",
+    "description": "Used when the client has closed the request before the server could send a response."
   },
   "500": {
     "emoji": "💣",

@@ -1,4 +1,4 @@
-# AASAAM HTTP Status Extra Preview
+# HTTP Status Extra Preview
 
 There is result of process based on JSON data.
 
@@ -87,7 +87,7 @@ There is result of process based on JSON data.
 | 🏷 | **496** | `SSL Certificate Required` | nginx | _An expansion of the 400 Bad Request response code, used when a client certificate is required but not provided._ |
 | ❎ | **497** | `HTTP Request Sent to HTTPS Port` | nginx | _An expansion of the 400 Bad Request response code, used when the client has made a HTTP request to a port listening for HTTPS requests._ |
 | 🆔 | **498** | `Invalid Token` | unofficial | _Returned by ArcGIS for Server. Code 498 indicates an expired or otherwise invalid token._ |
-| 🚶🏽 | **499** | `Token Required` | nginx | _Returned by ArcGIS for Server. Code 499 indicates that a token is required but was not submitted._ |
+| 🚶🏽 | **499** | `Client Closed Request` | nginx | _Used when the client has closed the request before the server could send a response._ |
 | 🔴 | **520** | `Unknown Error` | cloudflare | _The 520 error is used as a "catch-all response for when the origin server returns something unexpected", listing connection resets, large headers, and empty or invalid responses as common triggers._ |
 | 💤 | **521** | `Web Server Is Down` | cloudflare | _The origin server has refused the connection from Cloudflare._ |
 | ⌚️ | **522** | `Connection Timed Out` | cloudflare | _Cloudflare could not negotiate a TCP handshake with the origin server._ |
