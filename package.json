@@ -1,6 +1,6 @@
 {
   "name": "@aasaam/http-status-extra",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "HTTP Status code extra information and emoji",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AASAAM/http-status-extra.git"
-},
+  },
   "jest": {
     "testRegex": ".spec.js$",
     "collectCoverageFrom": [
