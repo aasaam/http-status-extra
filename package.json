@@ -9,6 +9,10 @@
     "test:cover": "jest --detectOpenHandles --runInBand --collectCoverage",
     "test": "jest --detectOpenHandles --runInBand"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AASAAM/http-status-extra.git"
+},
   "jest": {
     "testRegex": ".spec.js$",
     "collectCoverageFrom": [
