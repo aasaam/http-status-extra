@@ -27,7 +27,7 @@ All data stored on [data.json](./data.json).
 
 ## Preview
 
-Open [HTTP_EXTRA_STATUS.md](./HTTP_EXTRA_STATUS.md).
+Open [PREVIEW.md](./PREVIEW.md).
 
 ## Contribute
 

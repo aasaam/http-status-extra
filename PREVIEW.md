@@ -1,6 +1,6 @@
 # AASAAM HTTP Status Extra Preview
 
-There is result of process based on [../data.json](../data.json)
+There is result of process based on JSON data.
 
 ## Standard
 
