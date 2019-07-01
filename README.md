@@ -11,7 +11,7 @@
 
 This simple package provide more fun stuff about standards and non-standards of HTTP Status Code.
 
-All of data collected from [wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+All of data collected from [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) and [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
 ## Contribute
 
@@ -36,11 +36,11 @@ All data stored on [data.json](./data.json).
 
 | Emoji | Code | Message | Description |
 |---|---|---|---|
-| 🏁 | **100** | `Continue` | _The server has received the request headers and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). Sending a large request body to a server after a request has been rejected for inappropriate headers would be inefficient. To have a server check the request's headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body. If the client receives an error code such as 403 (Forbidden) or 405 (Method Not Allowed) then it shouldn't send the request's body. The response 417 Expectation Failed indicates that the request should be repeated without the Expect header as it indicates that the server doesn't support expectations (this is the case, for example, of HTTP/1.0 servers)._ |
+| 🏁 | **100** | `Continue` | _This interim response indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished._ |
 | 🔌 | **101** | `Switching Protocols` | _The requester has asked the server to switch protocols and the server has agreed to do so._ |
-| 🖥 | **102** | `Processing` | _A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request. This code indicates that the server has received and is processing the request, but no response is available yet. This prevents the client from timing out and assuming the request was lost._ |
+| 🖥 | **102** | `Processing` | _This code indicates that the server has received and is processing the request, but no response is available yet._ |
 | 🗣 | **103** | `Early Hints` | _Used to return some response headers before final HTTP message._ |
-| ✅ | **200** | `OK` | _Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action._ |
+| ✅ | **200** | `OK` | _The request has succeeded._ |
 | 📝 | **201** | `Created` | _The request has been fulfilled, resulting in the creation of a new resource._ |
 | 🔄 | **202** | `Accepted` | _The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs._ |
 | 💫 | **203** | `Non-Authoritative Information` | _The server is a transforming proxy (e.g. a Web accelerator) that received a 200 OK from its origin, but is returning a modified version of the origin's response._ |
@@ -59,7 +59,7 @@ All data stored on [data.json](./data.json).
 | ℹ️ | **307** | `Temporary Redirect` | _In this case, the request should be repeated with another URI; however, future requests should still use the original URI. In contrast to how 302 was historically implemented, the request method is not allowed to be changed when reissuing the original request. For example, a POST request should be repeated using another POST request._ |
 | 🆕 | **308** | `Permanent Redirect` | _The request and all future requests should be repeated using another URI. 307 and 308 parallel the behaviors of 302 and 301, but do not allow the HTTP method to change. So, for example, submitting a form to a permanently redirected resource may continue smoothly._ |
 | 🚫 | **400** | `Bad Request` | _The server cannot or will not process the request due to an apparent client error (e.g., malformed request syntax, size too large, invalid request message framing, or deceptive request routing)._ |
-| 🔐 | **401** | `Unauthorized` | _Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource. See Basic access authentication and Digest access authentication. 401 semantically means "unauthorised" , the user does not have valid authentication credentials for the target resource._ |
+| 🔐 | **401** | `Unauthorized` | _Although the HTTP standard specifies "unauthorized", semantically this response means "unauthenticated". That is, the client must authenticate itself to get the requested response._ |
 | 💰 | **402** | `Payment Required` | _Reserved for future use. The original intention was that this code might be used as part of some form of digital cash or micropayment scheme, as proposed, for example, by GNU Taler, but that has not yet happened, and this code is not usually used. Google Developers API uses this status if a particular developer has exceeded the daily limit on requests. Sipgate uses this code if an account does not have sufficient funds to start a call. Shopify uses this code when the store has not paid their fees and is temporarily disabled._ |
 | ⛔ | **403** | `Forbidden` | _The request was valid, but the server is refusing action. The user might not have the necessary permissions for a resource, or may need an account of some sort. This code is also typically used if the request provided authentication via the WWW-Authenticate header field, but the server did not accept that authentication._ |
 | ❓ | **404** | `Not Found` | _The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible._ |
@@ -68,7 +68,7 @@ All data stored on [data.json](./data.json).
 | 🔩 | **407** | `Proxy Authentication Required` | _The client must first authenticate itself with the proxy._ |
 | ⌛️ | **408** | `Request Timeout` | _The server timed out waiting for the request. According to HTTP specifications: "The client did not produce a request within the time that the server was prepared to wait. The client MAY repeat the request without modifications at any later time."_ |
 | 💥 | **409** | `Conflict` | _Indicates that the request could not be processed because of conflict in the current state of the resource, such as an edit conflict between multiple simultaneous updates._ |
-| 💨 | **410** | `Gone` | _Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a "404 Not Found" may be used instead._ |
+| 💨 | **410** | `Gone` | _This response would be sent when the requested content has been permanently deleted from server, with no forwarding address. Clients are expected to remove their caches and links to the resource._ |
 | 📏 | **411** | `Length Required` | _The request did not specify the length of its content, which is required by the requested resource._ |
 | 🛑 | **412** | `Precondition Failed` | _The server does not meet one of the preconditions that the requester put on the request header fields._ |
 | 🗃 | **413** | `Payload Too Large` | _The request is larger than the server is willing or able to process. Previously called "Request Entity Too Large"._ |
@@ -98,7 +98,7 @@ All data stored on [data.json](./data.json).
 | ➰ | **508** | `Loop Detected` | _The server detected an infinite loop while processing the request (sent instead of 208 Already Reported)._ |
 | 📈 | **509** | `Bandwidth Limit Exceeded` | _The server has exceeded the bandwidth specified by the server administrator; this is often used by shared hosting providers to limit the bandwidth of customers._ |
 | 🏗 | **510** | `Not Extended` | _Further extensions to the request are required for the server to fulfil it._ |
-| 🔑 | **511** | `Network Authentication Required` | _The client needs to authenticate to gain network access. Intended for use by intercepting proxies used to control access to the network (e.g., "captive portals" used to require agreement to Terms of Service before granting full Internet access via a Wi-Fi hotspot)._ |
+| 🔑 | **511** | `Network Authentication Required` | _The 511 status code indicates that the client needs to authenticate to gain network access._ |
 
 ### Non-Standards
 

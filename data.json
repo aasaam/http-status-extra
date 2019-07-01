@@ -3,7 +3,7 @@
     "emoji": "🏁",
     "standard": "http",
     "message": "Continue",
-    "description": "The server has received the request headers and the client should proceed to send the request body (in the case of a request for which a body needs to be sent; for example, a POST request). Sending a large request body to a server after a request has been rejected for inappropriate headers would be inefficient. To have a server check the request's headers, a client must send Expect: 100-continue as a header in its initial request and receive a 100 Continue status code in response before sending the body. If the client receives an error code such as 403 (Forbidden) or 405 (Method Not Allowed) then it shouldn't send the request's body. The response 417 Expectation Failed indicates that the request should be repeated without the Expect header as it indicates that the server doesn't support expectations (this is the case, for example, of HTTP/1.0 servers)."
+    "description": "This interim response indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished."
   },
   "101": {
     "emoji": "🔌",
@@ -15,7 +15,7 @@
     "emoji": "🖥",
     "standard": "http",
     "message": "Processing",
-    "description": "A WebDAV request may contain many sub-requests involving file operations, requiring a long time to complete the request. This code indicates that the server has received and is processing the request, but no response is available yet. This prevents the client from timing out and assuming the request was lost."
+    "description": "This code indicates that the server has received and is processing the request, but no response is available yet."
   },
   "103": {
     "emoji": "🗣",
@@ -27,7 +27,7 @@
     "emoji": "✅",
     "standard": "http",
     "message": "OK",
-    "description": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request, the response will contain an entity describing or containing the result of the action."
+    "description": "The request has succeeded."
   },
   "201": {
     "emoji": "📝",
@@ -153,7 +153,7 @@
     "emoji": "🔐",
     "standard": "http",
     "message": "Unauthorized",
-    "description": "Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource. See Basic access authentication and Digest access authentication. 401 semantically means \"unauthorised\" , the user does not have valid authentication credentials for the target resource."
+    "description": "Although the HTTP standard specifies \"unauthorized\", semantically this response means \"unauthenticated\". That is, the client must authenticate itself to get the requested response."
   },
   "402": {
     "emoji": "💰",
@@ -207,7 +207,7 @@
     "emoji": "💨",
     "standard": "http",
     "message": "Gone",
-    "description": "Indicates that the resource requested is no longer available and will not be available again. This should be used when a resource has been intentionally removed and the resource should be purged. Upon receiving a 410 status code, the client should not request the resource in the future. Clients such as search engines should remove the resource from their indices. Most use cases do not require clients and search engines to purge the resource, and a \"404 Not Found\" may be used instead."
+    "description": "This response would be sent when the requested content has been permanently deleted from server, with no forwarding address. Clients are expected to remove their caches and links to the resource."
   },
   "411": {
     "emoji": "📏",
@@ -459,7 +459,7 @@
     "emoji": "🔑",
     "standard": "http",
     "message": "Network Authentication Required",
-    "description": "The client needs to authenticate to gain network access. Intended for use by intercepting proxies used to control access to the network (e.g., \"captive portals\" used to require agreement to Terms of Service before granting full Internet access via a Wi-Fi hotspot)."
+    "description": "The 511 status code indicates that the client needs to authenticate to gain network access."
   },
   "520": {
     "emoji": "🔴",
