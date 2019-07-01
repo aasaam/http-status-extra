@@ -3,6 +3,7 @@ node_modules/
 package-lock.json
 test/
 tools/
+HTTP_EXTRA_STATUS.md
 .editorconfig
 .eslint*
 .prettierrc
