@@ -1,6 +1,6 @@
 {
   "name": "@aasaam/http-status-extra",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "HTTP Status code extra information and emoji",
   "main": "index.js",
   "private": false,
