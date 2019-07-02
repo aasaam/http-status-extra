@@ -39,7 +39,3 @@ Feel free to open pull request but remember simple rules:
 
 * Emoji must be unique over status codes.
 * Standard `http` must be covered by [nodejs http module](https://nodejs.org/api/http.html#http_http_status_codes).
-
-## Todo
-
-* Better description not just from sources.
