@@ -13,6 +13,8 @@ describe('Container', () => {
       const s = m[c];
       if (s.standard === 'http') {
         expect(STATUS_CODES[c].toLocaleLowerCase()).toEqual(m[c].message.toLocaleLowerCase());
+      } else {
+        expect(STATUS_CODES[c]).toEqual(undefined);
       }
     });
   });
