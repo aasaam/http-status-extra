@@ -22,25 +22,25 @@ Object.keys(m).forEach((c) => {
 });
 
 console.log('# HTTP Status Extra Preview');
-console.log();
+console.log('');
 Object.keys(std).forEach((cat) => {
   const cData = catData[cat];
-
+  console.log('');
   console.log(`## ${cData.type} ${cData.message}`);
-  console.log();
+  console.log('');
   console.log(`${cData.description}`);
-  console.log();
-  console.log('### Standard');
-  console.log();
+  console.log('');
+  console.log(`### Standard ${cData.type} ${cData.message}`);
+  console.log('');
   console.log(`| Emoji | Code | Message | Description |
 |---|---|---|---|`);
   std[cat].forEach((line) => {
     console.log(line);
   });
   if (nstd[cat]) {
-    console.log();
-    console.log('### Non-Standard');
-    console.log();
+    console.log('');
+    console.log(`### Non-Standard ${cData.type} ${cData.message}`);
+    console.log('');
     console.log(`| Emoji | Code | Message | Standard | Description |
 |---|---|---|---|---|`);
     nstd[cat].forEach((line) => {

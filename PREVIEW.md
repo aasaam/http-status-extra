@@ -1,10 +1,11 @@
 # HTTP Status Extra Preview
 
+
 ## 1xx Information
 
 1xx codes are often interim responses for sharing connection status information. Not intended for final request or response action.
 
-### Standard
+### Standard 1xx Information
 
 | Emoji | Code | Message | Description |
 |---|---|---|---|
@@ -12,11 +13,12 @@
 | 🔌 | **101** | `Switching Protocols` | _The requester has asked the server to switch protocols._ |
 | 🖥 | **102** | `Processing` | _This code indicates that the server has received and is processing the request, but no response is available yet. This prevents the client from timing out and assuming the request was lost._ |
 | 🗣 | **103** | `Early Hints` | _Used to return some response headers before final HTTP message._ |
+
 ## 2xx Successful
 
 2xx codes indicate successful responses usually this means the action requested by the client was received, understood and accepted successfully.
 
-### Standard
+### Standard 2xx Successful
 
 | Emoji | Code | Message | Description |
 |---|---|---|---|
@@ -31,16 +33,17 @@
 | 📢 | **208** | `Already Reported` | _The members of a DAV binding have already been enumerated in a preceding part of the (multistatus) response, and are not being included again._ |
 | 📣 | **226** | `IM Used` | _The server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance._ |
 
-### Non-Standard
+### Non-Standard 2xx Successful
 
 | Emoji | Code | Message | Standard | Description |
 |---|---|---|---|---|
 | 🆗 | **218** | `This is fine` | unofficial | _Used as a catch-all error condition for allowing response bodies to flow through Apache when ProxyErrorOverride is enabled._ |
+
 ## 3xx Redirection
 
 3xx codes are a class of responses that suggest the User-Agent must follow another course of action to obtain the complete requested resource.
 
-### Standard
+### Standard 3xx Redirection
 
 | Emoji | Code | Message | Description |
 |---|---|---|---|
@@ -52,16 +55,17 @@
 | ℹ️ | **307** | `Temporary Redirect` | _The requested page has moved temporarily to a new URL._ |
 | 🆕 | **308** | `Permanent Redirect` | _Used in the resumable requests proposal to resume aborted PUT or POST requests._ |
 
-### Non-Standard
+### Non-Standard 3xx Redirection
 
 | Emoji | Code | Message | Standard | Description |
 |---|---|---|---|---|
 | 🔃 | **306** | `Switch Proxy` | unofficial | _No longer used. Originally meant "Subsequent requests should use the specified proxy."_ |
+
 ## 4xx Client Error
 
 4xx codes generally are error responses specifying an issue at the client’s end. Potentially a network issue.
 
-### Standard
+### Standard 4xx Client Error
 
 | Emoji | Code | Message | Description |
 |---|---|---|---|
@@ -94,7 +98,7 @@
 | 🤮 | **431** | `Request Header Fields Too Large` | _The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large._ |
 | 🔏️ | **451** | `Unavailable For Legal Reasons` | _A server operator has received a legal demand to deny access to a resource or to a set of resources that includes the requested resource._ |
 
-### Non-Standard
+### Non-Standard 4xx Client Error
 
 | Emoji | Code | Message | Standard | Description |
 |---|---|---|---|---|
@@ -110,11 +114,12 @@
 | ❎ | **497** | `HTTP Request Sent to HTTPS Port` | nginx | _An expansion of the 400 Bad Request response code, used when the client has made a HTTP request to a port listening for HTTPS requests._ |
 | 🆔 | **498** | `Invalid Token` | unofficial | _Returned by ArcGIS for Server. Code 498 indicates an expired or otherwise invalid token._ |
 | 🚶🏽 | **499** | `Client Closed Request` | nginx | _A non-standard status code introduced by nginx for the case when a client closes the connection while nginx is processing the request._ |
+
 ## 5xx Server Error
 
 5xx error codes indicate that an error or unresolvable request occurred on the server side, whether that is a proxy or the origin host.
 
-### Standard
+### Standard 5xx Server Error
 
 | Emoji | Code | Message | Description |
 |---|---|---|---|
@@ -131,7 +136,7 @@
 | 🏗 | **510** | `Not Extended` | _Further extensions to the request are required for the server to fulfil it._ |
 | 🔑 | **511** | `Network Authentication Required` | _The client needs to authenticate to gain network access._ |
 
-### Non-Standard
+### Non-Standard 5xx Server Error
 
 | Emoji | Code | Message | Standard | Description |
 |---|---|---|---|---|

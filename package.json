@@ -2,6 +2,7 @@
   "name": "@aasaam/http-status-extra",
   "version": "0.1.0",
   "description": "HTTP Status code extra information and emoji",
+  "types": "index.d.ts",
   "main": "index.js",
   "private": false,
   "scripts": {
@@ -12,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AASAAM/http-status-extra.git"
+    "url": "git+https://github.com/aasaam/http-status-extra.git"
   },
   "jest": {
     "testRegex": ".spec.js$",
@@ -50,7 +51,7 @@
   "devDependencies": {
     "@types/jest": "^24",
     "eslint": "^6",
-    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-airbnb-base": "^14",
     "eslint-plugin-import": "^2",
     "jest": "^24",
     "lodash": "^4",
