@@ -571,6 +571,17 @@
       "description": "4xx codes generally are error responses specifying an issue at the client’s end. Potentially a network issue."
     }
   },
+  "438": {
+    "emoji": "📛",
+    "standard": "unofficial",
+    "message": "Intrusion Detected",
+    "description": "Your request was blocked by Web Application Firewall (WAF).",
+    "category": {
+      "type": "4xx",
+      "message": "Client Error",
+      "description": "4xx codes generally are error responses specifying an issue at the client’s end. Potentially a network issue."
+    }
+  },
   "440": {
     "emoji": "🛂",
     "standard": "iis",

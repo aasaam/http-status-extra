@@ -1,6 +1,5 @@
 # HTTP Status Extra Preview
 
-
 ## 1xx Information
 
 1xx codes are often interim responses for sharing connection status information. Not intended for final request or response action.
@@ -104,6 +103,7 @@
 |---|---|---|---|---|
 | 🕰 | **419** | `Page Expired` | unofficial | _Used by the Laravel Framework when a CSRF Token is missing or expired._ |
 | 🤖 | **420** | `Method Failure` | unofficial | _A deprecated response used by the Spring Framework when a method has failed._ |
+| 📛 | **438** | `Intrusion Detected` | unofficial | _Your request was blocked by Web Application Firewall (WAF)._ |
 | 🛂 | **440** | `Login Time` | iis | _The client's session has expired and must log in again. (IIS)_ |
 | 🗑 | **444** | `No Response` | nginx | _A non-standard status code used to instruct nginx to close the connection without sending a response to the client, most commonly used to deny malicious or malformed requests._ |
 | 🛃 | **449** | `Retry With` | iis | _The server cannot honour the request because the user has not provided the required information. (IIS)_ |
