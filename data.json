@@ -1,0 +1,572 @@
+{
+  "category": {
+    "1xx": {
+      "message": "Information",
+      "description": "1xx codes are often interim responses for sharing connection status information. Not intended for final request or response action."
+    },
+    "2xx": {
+      "message": "Successful",
+      "description": "2xx codes indicate successful responses usually this means the action requested by the client was received, understood and accepted successfully."
+    },
+    "3xx": {
+      "message": "Redirection",
+      "description": "3xx codes are a class of responses that suggest the User-Agent must follow another course of action to obtain the complete requested resource."
+    },
+    "4xx": {
+      "message": "Client Error",
+      "description": "4xx codes generally are error responses specifying an issue at the client’s end. Potentially a network issue."
+    },
+    "5xx": {
+      "message": "Server Error",
+      "description": "5xx error codes indicate that an error or unresolvable request occurred on the server side, whether that is a proxy or the origin host."
+    }
+  },
+  "statusCodes": {
+    "100": {
+      "emoji": "🏁",
+      "standard": "http",
+      "message": "Continue",
+      "description": "The server has received the request headers, and the client should proceed to send the request body."
+    },
+    "101": {
+      "emoji": "🔌",
+      "standard": "http",
+      "message": "Switching Protocols",
+      "description": "The requester has asked the server to switch protocols."
+    },
+    "102": {
+      "emoji": "🖥",
+      "standard": "http",
+      "message": "Processing",
+      "description": "This code indicates that the server has received and is processing the request, but no response is available yet. This prevents the client from timing out and assuming the request was lost."
+    },
+    "103": {
+      "emoji": "🗣",
+      "standard": "http",
+      "message": "Early Hints",
+      "description": "Used to return some response headers before final HTTP message."
+    },
+    "200": {
+      "emoji": "✅",
+      "standard": "http",
+      "message": "OK",
+      "description": "The request is OK (this is the standard response for successful HTTP requests)."
+    },
+    "201": {
+      "emoji": "📝",
+      "standard": "http",
+      "message": "Created",
+      "description": "The request has been fulfilled, and a new resource is created."
+    },
+    "202": {
+      "emoji": "🔄",
+      "standard": "http",
+      "message": "Accepted",
+      "description": "The request has been accepted for processing, but the processing has not been completed."
+    },
+    "203": {
+      "emoji": "💫",
+      "standard": "http",
+      "message": "Non-Authoritative Information",
+      "description": "The request has been successfully processed, but is returning information that may be from another source."
+    },
+    "204": {
+      "emoji": "💭",
+      "standard": "http",
+      "message": "No Content",
+      "description": "The request has been successfully processed, but is not returning any content."
+    },
+    "205": {
+      "emoji": "🎉",
+      "standard": "http",
+      "message": "Reset Content",
+      "description": "The request has been successfully processed, but is not returning any content, and requires that the requester reset the document view."
+    },
+    "206": {
+      "emoji": "🎊",
+      "standard": "http",
+      "message": "Partial Content",
+      "description": "The server is delivering only part of the resource due to a range header sent by the client."
+    },
+    "207": {
+      "emoji": "🎏",
+      "standard": "http",
+      "message": "Multi-Status",
+      "description": "The message body that follows is by default an XML message and can contain a number of separate response codes, depending on how many sub-requests were made."
+    },
+    "208": {
+      "emoji": "📢",
+      "standard": "http",
+      "message": "Already Reported",
+      "description": "The members of a DAV binding have already been enumerated in a preceding part of the (multistatus) response, and are not being included again."
+    },
+    "218": {
+      "emoji": "🆗",
+      "standard": "unofficial",
+      "message": "This is fine",
+      "description": "Used as a catch-all error condition for allowing response bodies to flow through Apache when ProxyErrorOverride is enabled."
+    },
+    "226": {
+      "emoji": "📣",
+      "standard": "http",
+      "message": "IM Used",
+      "description": "The server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance."
+    },
+    "300": {
+      "emoji": "🔀",
+      "standard": "http",
+      "message": "Multiple Choices",
+      "description": "A link list. The user can select a link and go to that location. Maximum five addresses."
+    },
+    "301": {
+      "emoji": "🚚",
+      "standard": "http",
+      "message": "Moved Permanently",
+      "description": "The requested page has moved to a new URL."
+    },
+    "302": {
+      "emoji": "🔎",
+      "standard": "http",
+      "message": "Found",
+      "description": "The requested page has moved temporarily to a new URL."
+    },
+    "303": {
+      "emoji": "📨",
+      "standard": "http",
+      "message": "See Other",
+      "description": "The requested page can be found under a different URL."
+    },
+    "304": {
+      "emoji": "💠",
+      "standard": "http",
+      "message": "Not Modified",
+      "description": "Indicates the requested page has not been modified since last requested."
+    },
+    "306": {
+      "emoji": "🔃",
+      "standard": "unofficial",
+      "message": "Switch Proxy",
+      "description": "No longer used. Originally meant \"Subsequent requests should use the specified proxy.\""
+    },
+    "307": {
+      "emoji": "ℹ️",
+      "standard": "http",
+      "message": "Temporary Redirect",
+      "description": "The requested page has moved temporarily to a new URL."
+    },
+    "308": {
+      "emoji": "🆕",
+      "standard": "http",
+      "message": "Permanent Redirect",
+      "description": "Used in the resumable requests proposal to resume aborted PUT or POST requests."
+    },
+    "400": {
+      "emoji": "🚫",
+      "standard": "http",
+      "message": "Bad Request",
+      "description": "The request cannot be fulfilled due to bad syntax."
+    },
+    "401": {
+      "emoji": "🔐",
+      "standard": "http",
+      "message": "Unauthorized",
+      "description": "The request was a legal request, but the server is refusing to respond to it. For use when authentication is possible but has failed or not yet been provided."
+    },
+    "402": {
+      "emoji": "💰",
+      "standard": "http",
+      "message": "Payment Required",
+      "description": "Not yet implemented by RFC standards, but reserved for future use."
+    },
+    "403": {
+      "emoji": "⛔",
+      "standard": "http",
+      "message": "Forbidden",
+      "description": "The request was a legal request, but the server is refusing to respond to it."
+    },
+    "404": {
+      "emoji": "❓",
+      "standard": "http",
+      "message": "Not Found",
+      "description": "The requested page could not be found but may be available again in the future."
+    },
+    "405": {
+      "emoji": "❗",
+      "standard": "http",
+      "message": "Method Not Allowed",
+      "description": "A request was made of a page using a request method not supported by that page."
+    },
+    "406": {
+      "emoji": "🛡",
+      "standard": "http",
+      "message": "Not Acceptable",
+      "description": "The server can only generate a response that is not accepted by the client."
+    },
+    "407": {
+      "emoji": "🔩",
+      "standard": "http",
+      "message": "Proxy Authentication Required",
+      "description": "The client must first authenticate itself with the proxy."
+    },
+    "408": {
+      "emoji": "⌛️",
+      "standard": "http",
+      "message": "Request Timeout",
+      "description": "The server timed out waiting for the request."
+    },
+    "409": {
+      "emoji": "💥",
+      "standard": "http",
+      "message": "Conflict",
+      "description": "The request could not be completed because of a conflict in the request."
+    },
+    "410": {
+      "emoji": "💨",
+      "standard": "http",
+      "message": "Gone",
+      "description": "The requested page is no longer available."
+    },
+    "411": {
+      "emoji": "📏",
+      "standard": "http",
+      "message": "Length Required",
+      "description": "The \"Content-Length\" is not defined. The server will not accept the request without it."
+    },
+    "412": {
+      "emoji": "🛑",
+      "standard": "http",
+      "message": "Precondition Failed",
+      "description": "The precondition given in the request evaluated to false by the server."
+    },
+    "413": {
+      "emoji": "🗃",
+      "standard": "http",
+      "message": "Payload Too Large",
+      "description": "The server will not accept the request, because the request entity is too large."
+    },
+    "414": {
+      "emoji": "🆖",
+      "standard": "http",
+      "message": "URI Too Long",
+      "description": "The server will not accept the request, because the URL is too long. Occurs when you convert a POST request to a GET request with a long query information."
+    },
+    "415": {
+      "emoji": "📼",
+      "standard": "http",
+      "message": "Unsupported Media Type",
+      "description": "The server will not accept the request, because the media type is not supported."
+    },
+    "416": {
+      "emoji": "📐",
+      "standard": "http",
+      "message": "Range Not Satisfiable",
+      "description": "The client has asked for a portion of the file, but the server cannot supply that portion."
+    },
+    "417": {
+      "emoji": "🤔",
+      "standard": "http",
+      "message": "Expectation Failed",
+      "description": "The server cannot meet the requirements of the Expect request-header field."
+    },
+    "418": {
+      "emoji": "🍵",
+      "standard": "http",
+      "message": "I'm a Teapot",
+      "description": "Any attempt to brew coffee with a teapot should result in the error code \"418 I'm a teapot\". The resulting entity body MAY be short and stout."
+    },
+    "419": {
+      "emoji": "🕰",
+      "standard": "unofficial",
+      "message": "Page Expired",
+      "description": "Used by the Laravel Framework when a CSRF Token is missing or expired."
+    },
+    "420": {
+      "emoji": "🤖",
+      "standard": "unofficial",
+      "message": "Method Failure",
+      "description": "A deprecated response used by the Spring Framework when a method has failed."
+    },
+    "421": {
+      "emoji": "🔂",
+      "standard": "http",
+      "message": "Misdirected Request",
+      "description": "The request was directed at a server that is not able to produce a response (for example because a connection reuse)."
+    },
+    "422": {
+      "emoji": "💩",
+      "standard": "http",
+      "message": "Unprocessable Entity",
+      "description": "The request was well-formed but was unable to be followed due to semantic errors."
+    },
+    "423": {
+      "emoji": "🔒",
+      "standard": "http",
+      "message": "Locked",
+      "description": "The resource that is being accessed is locked."
+    },
+    "424": {
+      "emoji": "😒",
+      "standard": "http",
+      "message": "Failed Dependency",
+      "description": "The request failed due to failure of a previous request."
+    },
+    "426": {
+      "emoji": "📤",
+      "standard": "http",
+      "message": "Upgrade Required",
+      "description": "The client should switch to a different protocol such as TLS/1.0, given in the Upgrade header field."
+    },
+    "428": {
+      "emoji": "⛓",
+      "standard": "http",
+      "message": "Precondition Required",
+      "description": "The origin server requires the request to be conditional."
+    },
+    "429": {
+      "emoji": "🌋",
+      "standard": "http",
+      "message": "Too Many Requests",
+      "description": "The user has sent too many requests in a given amount of time. Intended for use with rate limiting schemes."
+    },
+    "431": {
+      "emoji": "🤮",
+      "standard": "http",
+      "message": "Request Header Fields Too Large",
+      "description": "The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large."
+    },
+    "437": {
+      "emoji": "🚮",
+      "standard": "aasaam",
+      "message": "Legacy browser",
+      "description": "Your request was blocked because you are using outdated browser. Try to download new version of most secure and standard browser."
+    },
+    "438": {
+      "emoji": "📛",
+      "standard": "aasaam",
+      "message": "Intrusion Detected",
+      "description": "Your request was blocked by Web Application Firewall (WAF)."
+    },
+    "439": {
+      "emoji": "🚷",
+      "standard": "aasaam",
+      "message": "Access denied",
+      "description": "Your request was blocked by access rules."
+    },
+    "440": {
+      "emoji": "🛂",
+      "standard": "iis",
+      "message": "Login Time",
+      "description": "The client's session has expired and must log in again. (IIS)"
+    },
+    "444": {
+      "emoji": "🗑",
+      "standard": "nginx",
+      "message": "No Response",
+      "description": "A non-standard status code used to instruct nginx to close the connection without sending a response to the client, most commonly used to deny malicious or malformed requests."
+    },
+    "449": {
+      "emoji": "🛃",
+      "standard": "iis",
+      "message": "Retry With",
+      "description": "The server cannot honour the request because the user has not provided the required information. (IIS)"
+    },
+    "450": {
+      "emoji": "🔞",
+      "standard": "unofficial",
+      "message": "Blocked by Windows Parental Controls",
+      "description": "The Microsoft extension code indicated when Windows Parental Controls are turned on and are blocking access to the requested webpage."
+    },
+    "451": {
+      "emoji": "🔏️",
+      "standard": "http",
+      "message": "Unavailable For Legal Reasons",
+      "description": "A server operator has received a legal demand to deny access to a resource or to a set of resources that includes the requested resource."
+    },
+    "460": {
+      "emoji": "⏱",
+      "standard": "elasticloadbalancing",
+      "message": "Client closed the connection",
+      "description": "Client closed the connection with the load balancer before the idle timeout period elapsed. Typically when client timeout is sooner than the Elastic Load Balancer's timeout."
+    },
+    "463": {
+      "emoji": "🌡",
+      "standard": "elasticloadbalancing",
+      "message": "X-Forwarded-For is to long",
+      "description": "The load balancer received an X-Forwarded-For request header with more than 30 IP addresses."
+    },
+    "494": {
+      "emoji": "🐳",
+      "standard": "nginx",
+      "message": "Request header too large",
+      "description": "Used by nginx to indicate the client sent too large of a request or header line that is too long."
+    },
+    "495": {
+      "emoji": "🏅",
+      "standard": "nginx",
+      "message": "SSL Certificate Error",
+      "description": "An expansion of the 400 Bad Request response code, used when the client has provided an invalid client certificate."
+    },
+    "496": {
+      "emoji": "🏷",
+      "standard": "nginx",
+      "message": "SSL Certificate Required",
+      "description": "An expansion of the 400 Bad Request response code, used when a client certificate is required but not provided."
+    },
+    "497": {
+      "emoji": "❎",
+      "standard": "nginx",
+      "message": "HTTP Request Sent to HTTPS Port",
+      "description": "An expansion of the 400 Bad Request response code, used when the client has made a HTTP request to a port listening for HTTPS requests."
+    },
+    "498": {
+      "emoji": "🆔",
+      "standard": "unofficial",
+      "message": "Invalid Token",
+      "description": "Returned by ArcGIS for Server. Code 498 indicates an expired or otherwise invalid token."
+    },
+    "499": {
+      "emoji": "🚶🏽",
+      "standard": "nginx",
+      "message": "Client Closed Request",
+      "description": "A non-standard status code introduced by nginx for the case when a client closes the connection while nginx is processing the request."
+    },
+    "500": {
+      "emoji": "💣",
+      "standard": "http",
+      "message": "Internal Server Error",
+      "description": "An error has occurred in a server side script, a no more specific message is suitable."
+    },
+    "501": {
+      "emoji": "📭",
+      "standard": "http",
+      "message": "Not Implemented",
+      "description": "The server either does not recognize the request method, or it lacks the ability to fulfill the request."
+    },
+    "502": {
+      "emoji": "🚧",
+      "standard": "http",
+      "message": "Bad Gateway",
+      "description": "The server was acting as a gateway or proxy and received an invalid response from the upstream server."
+    },
+    "503": {
+      "emoji": "🚨",
+      "standard": "http",
+      "message": "Service Unavailable",
+      "description": "The server is currently unavailable (overloaded or down)."
+    },
+    "504": {
+      "emoji": "⏲",
+      "standard": "http",
+      "message": "Gateway Timeout",
+      "description": "The server was acting as a gateway or proxy and did not receive a timely response from the upstream server."
+    },
+    "505": {
+      "emoji": "🕯",
+      "standard": "http",
+      "message": "HTTP Version Not Supported",
+      "description": "The server does not support the HTTP protocol version used in the request."
+    },
+    "506": {
+      "emoji": "💔",
+      "standard": "http",
+      "message": "Variant Also Negotiates",
+      "description": "Transparent content negotiation for the request results in a circular reference."
+    },
+    "507": {
+      "emoji": "💯",
+      "standard": "http",
+      "message": "Insufficient Storage",
+      "description": "The server is unable to store the representation needed to complete the request."
+    },
+    "508": {
+      "emoji": "➰",
+      "standard": "http",
+      "message": "Loop Detected",
+      "description": "The server detected an infinite loop while processing the request (sent instead of 208 Already Reported)."
+    },
+    "509": {
+      "emoji": "📈",
+      "standard": "http",
+      "message": "Bandwidth Limit Exceeded",
+      "description": "The server has exceeded the bandwidth specified by the server administrator; this is often used by shared hosting providers to limit the bandwidth of customers."
+    },
+    "510": {
+      "emoji": "🏗",
+      "standard": "http",
+      "message": "Not Extended",
+      "description": "Further extensions to the request are required for the server to fulfil it."
+    },
+    "511": {
+      "emoji": "🔑",
+      "standard": "http",
+      "message": "Network Authentication Required",
+      "description": "The client needs to authenticate to gain network access."
+    },
+    "520": {
+      "emoji": "🔴",
+      "standard": "cloudflare",
+      "message": "Unknown Error",
+      "description": "The 520 error is used as a \"catch-all response for when the origin server returns something unexpected\", listing connection resets, large headers, and empty or invalid responses as common triggers."
+    },
+    "521": {
+      "emoji": "💤",
+      "standard": "cloudflare",
+      "message": "Web Server Is Down",
+      "description": "The origin server has refused the connection from Cloudflare."
+    },
+    "522": {
+      "emoji": "⌚️",
+      "standard": "cloudflare",
+      "message": "Connection Timed Out",
+      "description": "Cloudflare could not negotiate a TCP handshake with the origin server."
+    },
+    "523": {
+      "emoji": "🏚",
+      "standard": "cloudflare",
+      "message": "Origin Is Unreachable",
+      "description": "Cloudflare could not reach the origin server; for example, if the DNS records for the origin server are incorrect."
+    },
+    "524": {
+      "emoji": "⏰",
+      "standard": "cloudflare",
+      "message": "A Timeout Occurred",
+      "description": "Cloudflare was able to complete a TCP connection to the origin server, but did not receive a timely HTTP response."
+    },
+    "525": {
+      "emoji": "🤝",
+      "standard": "cloudflare",
+      "message": "SSL Handshake Failed",
+      "description": "Cloudflare could not negotiate a SSL/TLS handshake with the origin server."
+    },
+    "526": {
+      "emoji": "🚑",
+      "standard": "cloudflare",
+      "message": "Invalid SSL Certificate",
+      "description": "Used by Cloudflare and Cloud Foundry's gorouter to indicate failure to validate the SSL/TLS certificate that the origin server presented."
+    },
+    "527": {
+      "emoji": "🔘",
+      "standard": "cloudflare",
+      "message": "Railgun Error",
+      "description": "Error 527 indicates that the request timed out or failed after the WAN connection had been established."
+    },
+    "530": {
+      "emoji": "🌨",
+      "standard": "cloudflare",
+      "message": "Site is frozen",
+      "description": "Error 530 indicates that the requested host name could not be resolved on the Cloudflare network to an origin server."
+    },
+    "538": {
+      "emoji": "📜",
+      "standard": "aasaam",
+      "message": "Temporary down",
+      "description": "According to contract, service not available. Call the support for more information."
+    },
+    "598": {
+      "emoji": "🥀",
+      "standard": "unofficial",
+      "message": "Network read timeout error",
+      "description": "Used by some HTTP proxies to signal a network read timeout behind the proxy to a client in front of the proxy."
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "@aasaam/http-status-extra",
+  "version": "0.2.2",
+  "description": "HTTP Status code extra information and emoji",
+  "types": "index.d.ts",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "lint": "eslint .",
+    "test:cover": "jest --detectOpenHandles --runInBand --collectCoverage",
+    "test": "jest --detectOpenHandles --runInBand"
+  },
+  "homepage": "https://aasaam.github.io/http-status-extra",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aasaam/http-status-extra.git"
+  },
+  "jest": {
+    "testRegex": ".spec.js$",
+    "collectCoverageFrom": [
+      "index.js",
+      "src/**/*.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "json",
+      "json-summary",
+      "text",
+      "lcov",
+      "html",
+      "clover"
+    ],
+    "testEnvironment": "node"
+  },
+  "authors": [
+    {
+      "name": "Muhammad Hussein Fattahizadeh",
+      "email": "m@mhf.ir"
+    }
+  ],
+  "keywords": [
+    "aasaam",
+    "http",
+    "status",
+    "nginx",
+    "cloudflare",
+    "elasticloadbalancing",
+    "iis",
+    "emoji"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26",
+    "eslint": "^7",
+    "eslint-config-airbnb-base": "^14",
+    "eslint-plugin-import": "^2",
+    "jest": "^26",
+    "lodash": "^4",
+    "stringz": "^2"
+  },
+  "dependencies": {}
+}
