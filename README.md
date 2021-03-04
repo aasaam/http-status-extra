@@ -31,3 +31,11 @@ All of data collected from [Wikipedia](https://en.wikipedia.org/wiki/List_of_HTT
 ## Preview
 
 See list of available status codes in [Preview](./PREVIEW.md) file.
+
+<div>
+  <p align="center">
+    <img alt="aasaam software development group" width="64" src="https://raw.githubusercontent.com/aasaam/information/master/logo/aasaam.svg">
+    <br />
+    aasaam software development group
+  </p>
+</div>
