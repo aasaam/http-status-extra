@@ -50,11 +50,11 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^26",
+    "@types/jest": "^27",
     "eslint": "^7",
     "eslint-config-airbnb-base": "^14",
     "eslint-plugin-import": "^2",
-    "jest": "^26",
+    "jest": "^27",
     "lodash": "^4",
     "stringz": "^2"
   },
