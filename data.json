@@ -334,6 +334,12 @@
       "message": "Request Header Fields Too Large",
       "description": "The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large."
     },
+    "436": {
+      "emoji": "🚪",
+      "standard": "aasaam",
+      "message": "Host Not Matched",
+      "description": "Host header not matched, check your url or ask administrators for help"
+    },
     "437": {
       "emoji": "🚮",
       "standard": "aasaam",
