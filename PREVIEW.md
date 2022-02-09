@@ -103,7 +103,7 @@
 |---|---|---|---|---|
 | 🕰 | **419** | `Page Expired` | unofficial | _Used by the Laravel Framework when a CSRF Token is missing or expired._ |
 | 🤖 | **420** | `Method Failure` | unofficial | _A deprecated response used by the Spring Framework when a method has failed._ |
-| 🚪 | **436** | `Host Not Matched` | aasaam | _Host header not matched, check your url or ask administrators for help_ |
+| 🚪 | **436** | `Host Not Matched` | aasaam | _Host header not found or not match matched, check your url and use valid host name(instead of IP address) or ask administrators for help_ |
 | 🚮 | **437** | `Legacy browser` | aasaam | _Your request was blocked because you are using outdated browser. Try to download new version of most secure and standard browser._ |
 | 📛 | **438** | `Intrusion Detected` | aasaam | _Your request was blocked by Web Application Firewall (WAF)._ |
 | 🚷 | **439** | `Access denied` | aasaam | _Your request was blocked by access rules._ |

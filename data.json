@@ -338,7 +338,7 @@
       "emoji": "🚪",
       "standard": "aasaam",
       "message": "Host Not Matched",
-      "description": "Host header not matched, check your url or ask administrators for help"
+      "description": "Host header not found or not match matched, check your url and use valid host name(instead of IP address) or ask administrators for help"
     },
     "437": {
       "emoji": "🚮",
